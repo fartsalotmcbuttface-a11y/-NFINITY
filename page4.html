@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|NFINITY - About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .about-section {
+      max-width: 1000px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .about-section { grid-template-columns: 1fr; text-align: center; }
+    }
+
+    .about-content h2 {
+      font-size: 3rem;
+      color: #b388ff;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      color: #a29bfe;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .specs-box {
+      background: rgba(179, 136, 255, 0.05);
+      border-left: 4px solid #b388ff;
+      padding: 2rem;
+      font-family: 'Space Mono', monospace;
+    }
+
+    .specs-box h4 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .specs-list {
+      list-style: none;
+      padding: 0;
+      color: #b388ff;
+    }
+
+    .specs-list li {
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .specs-list span {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1 class="text-xl font-bold text-purple-300">|NFINITY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Mini Photoshop</a>
+    <a href="page4.html" style="border-bottom: 2px solid #b388ff;">About</a>
+    <a href="page5.html">Gallery</a>
+  </div>
+</nav>
+
+<main class="about-section">
+  <div class="about-content">
+    <h2>Our Vision</h2>
+    <p>
+      |NFINITY was founded on the principle that digital tools should be as limitless as the human imagination. 
+      What started as a simple experiment in canvas rendering has evolved into a suite of creative interfaces 
+      designed for the next generation of digital architects.
+    </p>
+    <p>
+      We believe in open access to creativity. Whether you're using our <strong>Mini Photoshop</strong> 
+      tool or exploring our generative archives, you are part of a movement to redefine the boundaries 
+      between the user and the interface.
+    </p>
+    <a href="page3.html" class="btn">Launch Creator</a>
+  </div>
+
+  <div class="specs-box">
+    <h4>System Core</h4>
+    <ul class="specs-list">
+      <li><span>Project:</span> |NFINITY_v1.0</li>
+      <li><span>Status:</span> Online</li>
+      <li><span>Engine:</span> HTML5 / CSS3 / JS</li>
+      <li><span>Philosophy:</span> Radical Innovation</li>
+      <li><span>Location:</span> The Digital Void</li>
+    </ul>
+  </div>
+</main>
+
+</body>
+</html>

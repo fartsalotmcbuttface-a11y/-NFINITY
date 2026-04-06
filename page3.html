@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|NFINITY - Mini Photoshop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/drawing.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1 class="text-xl font-bold text-purple-300">|NFINITY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Mini Photoshop</a>
+    <a href="page4.html">About</a>
+  </div>
+</nav>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <button class="btn" onclick="setBrush()">Brush</button>
+  <button class="btn" onclick="setEraser()">Eraser</button>
+  <button class="btn" onclick="setShape('line')">Line</button>
+  <button class="btn" onclick="setShape('rect')">Rectangle</button>
+  <button class="btn" onclick="setShape('circle')">Circle</button>
+  <button class="btn" onclick="setFill()">Fill</button>
+  <button class="btn" onclick="clearCanvas()">Clear</button>
+  <button class="btn" onclick="undo()">Undo</button>
+  <button class="btn" onclick="redo()">Redo</button>
+  <button class="btn" onclick="saveImage()">Save</button>
+
+  <input type="color" id="colorPicker" value="#b388ff" title="Brush Color">
+  <select id="brushType">
+    <option value="normal">Normal</option>
+    <option value="neon">Neon</option>
+    <option value="soft">Soft</option>
+  </select>
+  <input type="range" id="brushSize" min="1" max="50" value="5">
+</div>
+
+<!-- CANVAS -->
+<canvas id="canvas" width="1000" height="600"></canvas>
+<div id="eraserPreview"></div>
+
+</body>
+</html>

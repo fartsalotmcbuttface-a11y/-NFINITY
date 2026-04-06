@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|NFINITY - Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .music-player {
+      max-width: 400px;
+      margin: 4rem auto;
+      background: linear-gradient(145deg, #1e1e2e, #111119);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(179, 136, 255, 0.2);
+    }
+    .visualizer {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 1rem;
+    }
+    .bar { width: 5px; height: 20px; background: #b388ff; animation: bounce 1s infinite; }
+    @keyframes bounce { 
+      0%, 100% { height: 10px; } 
+      50% { height: 40px; } 
+    }
+    audio { width: 100%; filter: invert(80%) hue-rotate(250deg); margin-top: 1rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <h1 class="text-xl font-bold text-purple-300">|NFINITY</h1>
+  <div><a href="index.html">Home</a><a href="page8.html">Music</a></div>
+</nav>
+
+<div class="music-player">
+  <div class="visualizer">
+    <div class="bar" style="animation-delay: 0.1s"></div>
+    <div class="bar" style="animation-delay: 0.3s"></div>
+    <div class="bar" style="animation-delay: 0.5s"></div>
+    <div class="bar" style="animation-delay: 0.2s"></div>
+  </div>
+  <h2 style="color: #b388ff; margin: 0;">Infinite Beats</h2>
+  <p style="font-family: 'Space Mono'; color: #a29bfe; font-size: 0.8rem;">NOW PLAYING: SYNTH_WAVE_01.MP3</p>
+  
+  <audio controls>
+    <source src="NEBULA27.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <div style="margin-top: 1.5rem;">
+    <p style="color:white; font-size: 0.9rem;">Playlist</p>
+    <ul style="list-style:none; padding:0; color:#a29bfe; font-family:'Space Mono'; font-size:0.7rem;">
+      <li style="margin: 5px 0;">01. Deep Space Echo</li>
+      <li style="margin: 5px 0;">02. Neon Horizon</li>
+      <li style="margin: 5px 0;">03. Cyber Drift</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

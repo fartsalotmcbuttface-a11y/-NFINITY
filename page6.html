@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|NFINITY - Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #b388ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-10px); background: rgba(179, 136, 255, 0.1); }
+  </style>
+</head>
+<body>
+<nav>
+  <h1 class="text-xl font-bold text-purple-300">|NFINITY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="page5.html">Archive</a>
+    <a href="page6.html" style="color:#b388ff;">Gallery</a>
+    <a href="page8.html">Music</a>
+  </div>
+</nav>
+
+<section style="text-align:center; padding-top: 3rem;">
+  <h2 style="font-family: 'Outfit'; color:#b388ff;">The Infinity Gallery</h2>
+  <div class="gallery-grid">
+    <a href="page5.html">
+    <div class="card"><h3>Project Alpha</h3><p>Exploring neon aesthetics.</p></div>
+    <div class="card"><h3>Project Beta</h3><p>Digital soundscapes.</p></div>
+    <div class="card"><h3>Project Gamma</h3><p>Visualizing the void.</p></div>
+    </a>
+  </div>
+</section>
+</body>
+</html>

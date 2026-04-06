@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|NFINITY - Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* Internal styles to ensure the grid looks good immediately */
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #b388ff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(179, 136, 255, 0.1);
+    }
+    .card h3 {
+      color: #b388ff;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      color: #a29bfe;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1 class="text-xl font-bold text-purple-300">|NFINITY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Mini Photoshop</a>
+    <a href="page4.html">About</a>
+    <a href="page5.html" style="border-bottom: 2px solid #b388ff;">Gallery</a>
+  </div>
+</nav>
+
+<section class="gallery-container">
+  <header style="text-align:center;">
+    <h2 style="font-size:3rem; color:#b388ff;">The Archive</h2>
+    <p style="color:#a29bfe;">Explore the boundaries of digital creation.</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Neural Networks</h3>
+      <p>Visualizing the flow of data through synthetic synapses. A study in computational aesthetics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Quantum Flux</h3>
+      <p>Experimental designs created using our Mini Photoshop engine and procedural generation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Void Space</h3>
+      <p>A deep dive into minimalist UI/UX design for the next generation of web interfaces.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:4rem;">
+    <a href="index.html" class="btn">Return to Nexus</a>
+    <a href="page6.html" class="btn">Return to gallery</a>
+  </div>
+</section>
+
+</body>
+</html>
